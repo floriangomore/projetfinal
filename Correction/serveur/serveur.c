@@ -32,7 +32,9 @@ int	server_connect(int port)
       close(sockfd);
       return (-1);
     }
+  printf("blatte1\n");
   listen(sockfd, 5);
+  printf("blatte2\n");
   return (sockfd);
 }
 
